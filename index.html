@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>Snang_e's Web Portfolio</title>        
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="author" content="Alvaro Trigo Lopez" />
+        <meta name="description" content="fullPage full-screen backgrounds." />
+        <meta name="keywords"  content="fullpage,jquery,demo,screen,fullscreen,backgrounds,full-screen" />
+        <meta name="Resource-type" content="Document" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+        
+        <!-- css -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"> <!-- font awsome -->
+        <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" /> <!-- full page -->
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/media.css" />
+        <!--[if IE]>
+            <script type="text/javascript">
+                 var console = { log: function() {} };
+            </script>
+        <![endif]-->
+
+        <!-- js -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="js/jquery.fullPage.js"></script> <!-- full page -->
+        <script type="text/javascript" src="js/scrolloverflow.js"></script> <!-- scroll overflow -->
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('#fullpage').fullpage({
+                    verticalCentered: true,
+                    sectionsColor: ['#1bbc9b', '#f2f2f2', '#fff', '#fff', '#f2f2f2', '#434242'],
+                    anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'lastPage'],
+                    scrollOverflow: true,
+                    onLeave: function(index, nextIndex, direction) {
+                        var leavingSection = $(this);
+                        
+                        // header 출력
+                        if(index == 0) {
+                            $('header').css('display', 'none');
+                        }
+
+                        else {
+                            $('header').css('display', 'block');
+                        }
+                    },
+                    afterLoad: function(anchorLink, index){
+                        var loadedSection = $(this);
+                        
+                        $('.gnb li').removeClass('active');
+                        switch(index) {
+                            case 1:
+                                $('header').css('display', 'none');
+                                break;
+                                
+                            case 2:
+                                $('.gnb li:nth-child(1)').addClass('active');
+                                break;
+                                
+                            case 3:
+                                $('.gnb li:nth-child(2)').addClass('active');
+                                break;
+                                
+                            case 4:
+                                $('.gnb li:nth-child(3)').addClass('active');
+                                break;
+                            
+                            case 5:
+                                $('.gnb li:nth-child(4)').addClass('active');
+                                break;
+                                
+                            case 6:
+                                $('.gnb li:nth-child(5)').addClass('active');
+                                break;
+                        }
+                    }
+                });
+            });
+        </script>
+        
+        <!-- mobile menu button -->
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.height = "250px";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidenav").style.height = "0";
+            }
+        </script>
+    </head>
+    
+    <body>
+        
+        <!-- header start -->
+            <header>
+                <div class="inner">
+                    <h1>
+                        <a href="#firstPage">
+                            <img src="images/logo.png" alt="logo" />
+                        </a>
+                    </h1>
+                    <ul class="gnb cf">
+                        <li><a href="#secondPage">PROFILE</a></li>
+                        <li><a href="#thirdPage">ABILITIES</a></li>
+                        <li><a href="#fourthPage">TIMELINE</a></li>
+                        <li><a href="#fifthPage">PROJECT</a></li>
+                        <li><a href="#lastPage">CONTACT</a></li>
+                    </ul>
+                </div>
+
+                <!-- mobile panel -->
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
+                    <a href="#secondPage">PROFILE</a>
+                    <a href="#thirdPage">ABILITIES</a>
+                    <a href="#fourthPage">TIMELINE</a>
+                    <a href="#fifthPage">PROJECT</a>
+                    <a href="#lastPage">CONTACT</a>
+                </div>
+                <span class="openBtn"  onclick="openNav()">&#9776;</span>
+            </header>
+            <!-- header end -->
+        
+        <div id="fullpage">
+            <!-- intro start -->
+            <div class="section " id="section0">
+                <video id="myVideo" loop muted data-autoplay>
+                    <source src="images/Looping%20Header%20Background.mp4" type="video/mp4">
+                </video>
+                <div class="layer">
+                    <h1>Snang_e's Web Portfolio</h1>
+                    <p>Interactive résumé</p>
+                </div>
+            </div>
+            <!-- intro end -->
+            
+            <!-- profile start -->
+            <div class="section" id="section1">
+                
+                <div class="inner">
+                    <div class="title">
+                        <h1>Profile</h1>
+                        <p>i'm a web programmer</p>
+                    </div>
+                    
+                    <div class="contents cf">
+                        <div class="about">
+                            <h2>About me</h2>
+                            <p>디자인을 잘 이해할 수 있는 개발자!</p>
+                            <p>웹(WEB)에 관심이 생겨 PHP를 독학으로 시작했습니다. 이후 디자인 측면에서도 완성도 높은 프로그램을 만들고 싶다는 욕심으로 디자인과 퍼블리싱을 배웠습니다.</p>
+                            <p>Front-end에서부터 Back-end까지 모든 기술에 흥미를 느끼고 있습니다. 배울 것이 많다는 것이 즐거운 개발자 <span>김선형</span>입니다.</p>
+                        </div>
+
+                        <div class="picture">
+                            <img src="images/me(black&round).png" alt="myPicture" />
+                            <p>Snang_e</p>
+                        </div>
+
+                        <div class="detail">
+                            <h2>Detail</h2>
+                            <h5>Name :</h5>
+                            <p>김선형</p>
+                            <p>SeonHyeong Kim</p>
+
+                            <h5>Major :</h5>
+                            <p>컴퓨터 공학 전공</p>
+                            <p>Computer Engineering</p>
+
+                            <h5>Location :</h5>
+                            <p>경상남도 창원시 성산구 사파동</p>
+                            <p>Seongsan-gu, Changwon-si, Gyeongsangnam-do, Republic of Korea</p>
+                        </div>
+                    </div>
+                    
+                    <div class="tags">
+                        <ul>
+                            <li>#Front-end</li>
+                            <li>#HTML</li>
+                            <li>#CSS</li>
+                            <li>#JavaScript</li>
+                            <li>#jQeury</li>
+                            <li>#Back-end</li>
+                            <li>#Apache</li>
+                            <li>#PHP</li>
+                            <li>#MySQL</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- profile end -->
+            
+            <!-- abilities start -->
+            <div class="section" id="section2">
+                
+                <div class="inner">
+                    <div class="title">
+                        <h1>Abilities</h1>
+                        <p>i'm a web programmer</p>
+                    </div>
+                    
+                    <div class="contents cf">
+                        <div class="skills">
+                            <h2>skills</h2>
+                            
+                            <ul>
+                                <li>
+                                    <span class="ability-title">C/C++</span>
+                                    <span class="ability-score">
+                                        <span class="fas fa-star filled"></span>
+                                        <span class="fas fa-star filled"></span>
+                                        <span class="fas fa-star filled"></span>
+                                        <span class="fas fa-star empty"></span>
+                                        <span class="fas fa-star empty"></span>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="ability-title">JAVA</span>
+                                    <span class="ability-score">
+                                        <span class="fas fa-star filled"></span>
+                                        <span class="fas fa-star filled"></span>
+                                        <span class="fas fa-star empty"></span>
+                                        <span class="fas fa-star empty"></span>
+                                        <span class="fas fa-star empty"></span>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="ability-title">Python</span>
+                                    <span class="ability-score">
+                                        <span class="fas fa-star filled"></span>
+                                        <span class="fas fa-star filled"></span>
+                                        <span class="fas fa-star empty"></span>
+                                        <span class="fas fa-star empty"></span>
+                                        <span class="fas fa-star empty"></span>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="ability-title">HTML</span>
+                                    <span class="ability-score">
+                                        <span class="fas fa-star filled"></span>
+                                        <span class="fas fa-star filled"></span>
+                                        <span class="fas fa-star filled"></span>
+                                        <span class="fas fa-star empty"></span>
+                                        <span class="fas fa-star empty"></span>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="ability-title">CSS</span>
+                                    <span class="ability-score">
+                                        <span class="fas fa-star filled"></span>
+                                        <span class="fas fa-star filled"></span>
+                                        <span class="fas fa-star filled"></span>
+                                        <span class="fas fa-star empty"></span>
+                                        <span class="fas fa-star empty"></span>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="ability-title">JavaScript</span>
+                                    <span class="ability-score">
+                                        <span class="fas fa-star filled"></span>
+                                        <span class="fas fa-star filled"></span>
+                                        <span class="fas fa-star empty"></span>
+                                        <span class="fas fa-star empty"></span>
+                                        <span class="fas fa-star empty"></span>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="ability-title">jQuery</span>
+                                    <span class="ability-score">
+                                        <span class="fas fa-star filled"></span>
+                                        <span class="fas fa-star filled"></span>
+                                        <span class="fas fa-star empty"></span>
+                                        <span class="fas fa-star empty"></span>
+                                        <span class="fas fa-star empty"></span>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="ability-title">PHP</span>
+                                    <span class="ability-score">
+                                        <span class="fas fa-star filled"></span>
+                                        <span class="fas fa-star filled"></span>
+                                        <span class="fas fa-star empty"></span>
+                                        <span class="fas fa-star empty"></span>
+                                        <span class="fas fa-star empty"></span>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="ability-title">MySQL</span>
+                                    <span class="ability-score">
+                                        <span class="fas fa-star filled"></span>
+                                        <span class="fas fa-star filled"></span>
+                                        <span class="fas fa-star empty"></span>
+                                        <span class="fas fa-star empty"></span>
+                                        <span class="fas fa-star empty"></span>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="ability-title">ORACLE</span>
+                                    <span class="ability-score">
+                                        <span class="fas fa-star filled"></span>
+                                        <span class="fas fa-star filled"></span>
+                                        <span class="fas fa-star empty"></span>
+                                        <span class="fas fa-star empty"></span>
+                                        <span class="fas fa-star empty"></span>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="certified">
+                            <h2>certified</h2>
+                            
+                            <ul>
+                                <li>
+                                    <span class="ability-title">SQLD</span>
+                                    <span class="ability-date">01/03/2017</span>
+                                </li>
+                                <li>
+                                    <span class="ability-title">ORACLE 12C (renewal)</span>
+                                    <span class="ability-date">mm/dd/2015</span>
+                                </li>
+                                <li>
+                                    <span class="ability-title">정보처리기사</span>
+                                    <span class="ability-date">08/22/2014</span>
+                                </li>
+                                <li>
+                                    <span class="ability-title">ORACLE 10G</span>
+                                    <span class="ability-date">mm/dd/2013</span>
+                                </li>
+                                <li>
+                                    <span class="ability-title">driver's license</span>
+                                    <span class="ability-date">01/08/2007</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- abilities end -->
+            
+            <!-- timeline start -->
+            <div class="section" id="section3">
+                
+                <div class="inner">
+                    <div class="title">
+                        <h1>Timeline</h1>
+                    </div>
+                    
+                    <div class="contents cf">
+                        <!-- 2018 -->
+                        <div class="history right">
+                            <h3>2018년</h3>
+                            
+                            <ul>
+                                <li>
+                                    <span class="month">6월</span>
+                                    <span class="cont">THE JOEUN 컴퓨터 아카데미 스마트웹&amp;모바일
+컨텐츠 제작 양성과정 수료&#40;6개월&#41;</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <!-- 2017 -->
+                        <div class="history left">
+                            <h3>2017년</h3>
+                            
+                            <ul>
+                                <li>
+                                    <span class="month">8월</span>
+                                    <span class="cont">컴퓨터 공학과 학사 졸업</span>
+                                </li>
+                                <li>
+                                    <span class="month">1월</span>
+                                    <span class="cont">데이터베이스 진흥원 SQL 개발자 자격증 취득</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <!-- 2016 -->
+                        <div class="history right">
+                            <h3>2016년</h3>
+                            
+                            <ul>
+                                <li>
+                                    <span class="month">1월</span>
+                                    <span class="cont">OCP 12c 갱신</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <!-- 2014 -->
+                        <div class="history left">
+                            <h3>2014년</h3>
+                            
+                            <ul>
+                                <li>
+                                    <span class="month">8월</span>
+                                    <span class="cont">정보처리기사 자격증 취득</span>
+                                </li>
+                                <li>
+                                    <span class="month">1월</span>
+                                    <span class="cont">산학협력 학생 주도형 해외탐방 미국 시애틀 방문</span>
+                                </li>
+                                <li>
+                                    <span class="month">1월</span>
+                                    <span class="cont">경남은행 IT기획부 현장실습&#40;1개월&#41;</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <!-- 2013 -->
+                        <div class="history right">
+                            <h3>2013년</h3>
+                            
+                            <ul>
+                                <li>
+                                    <span class="month">7월</span>
+                                    <span class="cont">사회적 기업 DANJAM 의뢰 웹사이트 개발&#40;2개월&#41;</span>
+                                </li>
+                                <li>
+                                    <span class="month">4월</span>
+                                    <span class="cont">산학협력선도대학사업단&#40;LINC&#41; 창업 동아리 가입</span>
+                                </li>
+                                <li>
+                                    <span class="month">3월</span>
+                                    <span class="cont">학과 학술 동아리 Interface Soft 회장 활동</span>
+                                </li>
+                                <li>
+                                    <span class="month">2월</span>
+                                    <span class="cont">OCP 10g 자격증 취득</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="progress"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- timeline end -->
+            
+            <!-- project start -->
+            <div class="section" id="section4">
+                
+                <div class="inner">
+                    <div class="title">
+                        <h1>Project</h1>
+                        <p>i'm a web programmer</p>
+                    </div>
+                    
+                    <div class="contents cf">
+                        <div class="project">
+                            <a href="#">
+                                <div class="pro_img">
+                                    <img src="images/dosmas.JPG" alt="" />
+                                </div>
+                                <div class="cover">
+                                    <h2>DOSMAS</h2>
+                                    <div class="line"></div>
+                                    <h4>DOSMAS 홈페이지 리뉴얼 프로젝트</h4>
+                                    <h5>Tags :</h5>
+                                    <p>
+                                        <span>#Responsive Web</span>
+                                        <span>#Card UI Design</span>
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="project">
+                            <a href="#">
+                                <div class="pro_img">
+                                    <img src="images/baby1.jpg" alt="" />
+                                </div>
+                                <div class="cover">
+                                    <h2>초록우산 어린이재단</h2>
+                                    <div class="line"></div>
+                                    <h4>초록우산 어린이재단 모바일 뷰</h4>
+                                    <h5>Tags :</h5>
+                                    <p>
+                                        <span>#Responsive Web</span>
+                                        <span>#Card UI Design</span>
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="project">
+                            <a href="#">
+                                <div class="pro_img">
+                                    <img src="images/ashley.jpg" alt="" />
+                                </div>
+                                <div class="cover">
+                                    <h2>ASHLEY</h2>
+                                    <div class="line"></div>
+                                    <h4>Ashley 홈페이지 리뉴얼 프로젝트</h4>
+                                    <h5>Tags :</h5>
+                                    <p>
+                                        <span>#Responsive Web</span>
+                                        <span>#Card UI Design</span>
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- slide page
+                <div class="slide" id="slide1"><h1>Project1</h1></div>
+                <div class="slide" id="slide2"><h1>Project2</h1></div>-->
+            </div>
+            <!-- project end -->
+            
+            <!-- contanct start -->
+            <div class="section" id="section5">
+                
+                <div class="inner">
+                    <div class="title">
+                        <h1>Contact</h1>
+                        <p>i'm a web programmer</p>
+                    </div>
+                    
+                    <div class="contents">
+                        <div class="info">
+                            <div class="email">
+                                <a href="#">
+                                    <img src="images/Email-icon.png" alt="" />
+                                    <p>srksh1267@gmail.com</p>
+                                    <p>srksh1267@naver.com</p>
+                                </a>
+                            </div>
+                            <div class="phone">
+                                <a href="tel;010-1234-1234">
+                                    <img src="images/phone-icon.png" alt="" />
+                                    <p>010-xxxx-xxxx</p>
+                                </a>
+                            </div>
+                        </div>
+                        <ul class="menu">
+                            <li><a href="#firstPage">INTRO</a></li>
+                            <li><a href="#secondPage">PROFILE</a></li>
+                            <li><a href="#thirdPage">ABILITIES</a></li>
+                            <li><a href="#fourthPage">TIMELINE</a></li>
+                            <li><a href="#fifthPage">PROJECT</a></li>
+                        </ul>
+                        <p class="copyright">&#64;2018 Snang_e</p>
+                    </div>
+                </div>
+            </div>
+            <!-- contact end -->
+        </div>
+    </body>
+</html>

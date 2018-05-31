@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>::초록우산::</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" /> 
+        
+        
+        <!-- Style Sheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"> <!-- font awsome -->
+        <link rel="stylesheet" type="text/css" href="css/slick.css" /> <!-- slick -->
+        <link rel="stylesheet" type="text/css" href="css/support.css" />
+        
+        
+        <!-- JavaScript -->
+        <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+        <script type="text/javascript" src="js/slick.js" ></script> <!-- slick -->
+    </head>
+    <body>
+        <!-- left menu start -->
+        <div id="leftSidenav" class="sidenav leftSide">
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="support-regular.html">
+                            <img src="images/slice/0-1-main---menu_03.png" alt="" />
+                            <p>정기후원</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="support-temporary.html">
+                            <img src="images/slice/0-1-main---menu_05.png" alt="" />
+                            <p>일시후원</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="support-sponsorship.html">
+                            <img src="images/slice/0-1-main---menu_07.png" alt="" />
+                            <p>결연후원</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+            <ul class="outerMenu">
+                <li>
+                    <button class="accordion">재단소개</button>
+                    <ul class="innerMenu first">
+                        <li><a href="intro-company.html">어린이 재단</a></li>
+                        <li><a href="intro-business.html">사업안내</a></li>
+                        <li><a href="intro-location.html">오시는 길</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <button class="accordion">후원하기</button>
+                    <ul class="innerMenu second">
+                        <li><a href="support-regular.html">정기후원</a></li>
+                        <li><a href="support-temporary.html">일시후원</a></li>
+                        <li><a href="support-sponsorship.html">결연후원</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <button class="accordion">캠페인</button>
+                    <ul class="innerMenu third">
+                        <li><a href="#">재단 캠페인</a></li>
+                        <li><a href="#">소셜펀딩</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <button class="accordion">나눔활동</button>
+                    <ul class="innerMenu fourth">
+                        <li><a href="#">나눔소식</a></li>
+                        <li><a href="#">자원봉사</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="exit leftExit">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeLeft()">&times;</a>
+            </div>
+        </div>
+        <!-- left menu end -->
+        
+        <!-- my page start -->
+        <div id="rightSidenav" class="sidenav rightSide">
+            <div class="upperWrap">
+                <div class="loginBtn">
+                    <a href="login.html">로그인</a>
+                </div>
+                <div class="joinBtn">
+                    <a href="#">회원가입</a>
+                </div>
+            </div>
+            <p>로그인 하시면 더 많은 서비스를</p>
+            <p>이용하실 수 있습니다.</p>
+            <ul class="history">
+                <li><a href="#">후원 내역</a></li>
+                <li><a href="#">봉사활동 내역</a></li>
+                <li><a href="#">캠페인 참여 내역</a></li>
+                <li><a href="#">결연아동</a></li>
+                <li><a href="#">문의/상담</a></li>
+            </ul>
+            
+            <div class="exit rightExit">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeRight()">&times;</a>
+            </div>
+        </div>
+        <!-- my page end -->
+        <div id="panel_cover"></div>
+        
+        
+        <div id="wrap">
+            <!-- header start -->
+            <header id="header">
+                <div class="panel">
+                    <i class="fas fa-bars" onclick="openLeft()"></i>
+                </div>
+                
+                <h1>
+                    <a href="index.html">
+                        <img src="images/logo.jpg" alt="logo" />
+                    </a>
+                </h1>
+                
+                <div class="login">
+                    <i class="far fa-user" onclick="openRight()"></i>
+                </div>
+            </header>
+            <!-- header end -->
+            
+            <!-- **************************** contents **************************** -->
+            <div class="content_menu">
+                <img src="images/slice/images/1-1-%EC%96%B4%EB%A6%B0%EC%9D%B4-%EC%9E%AC%EB%8B%A8_02.png" alt="" />
+                <div class="main_icon">
+                    <img src="images/slice/images/2-1-%EC%A0%95%EA%B8%B0%ED%9B%84%EC%9B%90_03.png" alt="" />
+                    <p>후원하기</p>
+                </div>
+                
+                <ul class="sub_menu cf">
+                    <li><a href="support-regular.html">정기후원</a></li>
+                    <li class="active_tab"><a href="support-temporary.html">일시후원</a></li>
+                    <li><a href="support-sponsorship.html">결연후원</a></li>
+                </ul>
+
+                <div class="content">
+                    <div class="main_image">
+                        <img src="images/slice/images/2-2-%EC%9D%BC%EC%8B%9C%ED%9B%84%EC%9B%90-x_03.png" alt="" />
+                        <div class="wise_saying">
+                            <p>“가끔씩 우리가 하는 일은 넓은 바다의 한 방울 물처럼 사소하고 하찮게 여겨질 때가 있습니다.</p>
+                            <p>그러나 그 한 방울의 물이 그 자리에 없게 된다면 넓었던 바닷물의 부피도 그 양만큼 줄어들게 되겠지요.”</p>
+                            <p class="author">- 마더 테레사 -</p>
+                        </div>
+                    </div>
+                    
+                    <h4>일시후원</h4>
+                    <p>기억하고 싶은 일이 생겨서 그 마음을 이웃과 나누고 싶으신가요? 후원자님이 보내주신 정성이 모여서 큰 기적을 이룹니다. 후원자님의 따뜻한 마음으로 아이들의 꿈이 한 뼘 더 자라납니다.</p>
+                    
+                    <div class="supportBtn">
+                        <a href="#">일시후원하기</a>
+                    </div>
+                    
+                    <h4>기념일후원</h4>
+                    <p>생일, 결혼, 출산 등 특별한 날, 소중한 사람과 함께 기념일 후원에 참여해보세요. 여러분의 특별한 날이 더욱 값지고 소중하게 기억될 것입니다.</p>
+                    
+                    <div class="grid cf">
+                        <div class="box1">생일, 회갑</div>
+                        <div class="box2">결혼, 연애</div>
+                        <div class="box3">출생</div>
+                        <div class="box4">백일, 돌</div>
+                        <div class="box5"></div>
+                        <div class="box6">입학, 졸업</div>
+                        <div class="box7">취직, 승진</div>
+                        <div class="box8">나만의 기념일</div>
+                        <div class="box9">나만의 첫 기부일</div>                        
+                    </div>
+                    
+                    <div class="simpleSupport">
+                        <h4>간편하게 후원하는 방법</h4>
+                        <p>홈페이지를 통한 후원이 불편하신 경우 ARS 후원, 문자 후원으로 간편하게 후원에 참여할 수 있습니다. 여러분의 소중한 후원금은 ‘민들레 기금’으로 적립되어 어린이 재단의 아동복지사업을 위해 사용됩니다.</p>
+                    </div>
+                    <div class="ars">
+                        <h5>ARS 후원</h5>
+                        <div class="left">
+                            <img src="images/bg_sponsor_way1.gif" alt="" />
+                        </div>    
+                        <div class="right">
+                            <h3>060.700.1580</h3>
+                            <p>ARS 번호로 전화 한 통을 걸어주시면 전화요금으로 후원금 <strong>3,000</strong>원이 납부됩니다.</p>
+                        </div>
+                        <div class="bottom">
+                            <a href="#">ARS 후원하기</a>
+                        </div>
+                    </div>
+                    <div class="ars">
+                        <h5>SMS 후원</h5>
+                        <div class="left">
+                            <img src="images/bg_sponsor_way2.gif" alt="" />
+                        </div>    
+                        <div class="right">
+                            <h3>#5004</h3>
+                            <p>수신자 번호 #5004에 희망메시지를 입력하여 문자를 보내시면 전화요금으로 후원금 <strong>5,000</strong>원이 납부됩니다.</p>
+                        </div>
+                        <div class="bottom">
+                            <a href="#">SMS 후원하기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+            
+            
+            
+            <!-- **************************** contents **************************** -->
+            
+            <!-- footer start -->
+            <footer id="footer">
+                <div class="footerTop">
+                    <ul class="cf">
+                        <li>
+                            <a href="#">
+                                <img src="images/slice/0-0-main_30.png" alt="" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/slice/0-0-main_32.png" alt="" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/slice/0-0-main_34.png" alt="" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/slice/0-0-main_36.png" alt="" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="footerBottom">
+                    <ul class="function">
+                        <li><a href="login.html">로그인</a></li>
+                        <li><a href="#">온라인상담</a></li>
+                        <li><a href="#">PC버전</a></li>
+                    </ul>
+                    
+                    <ul class="information">
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">대표전화 1588-1940</a></li>
+                    </ul>
+                    
+                    <p>Copyright &copy; CHILDFUND</p>
+                </div>
+            </footer>
+            <!-- footer end -->
+        </div>
+        
+        <script type="text/javascript" src="js/active.js"></script>
+    </body>
+</html>

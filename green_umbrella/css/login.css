@@ -1,0 +1,530 @@
+@charset "utf-8";
+/***********************
+        default
+************************/
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body, h1, h2, h3, h4, h5, p {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#wrap {
+    width: 100%;
+}
+
+.cf:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+
+
+
+/***********************
+        header
+************************/
+header {
+    height: 56px;
+    position: relative;
+    line-height: 56px;
+}
+header h1 {
+    width: 78px;
+    margin: 0 auto;
+}
+
+header h1 a {
+    display: block;
+    font-size: 0;
+}
+
+header h1 a img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+
+/***** left menu *****/
+header .panel {
+    width: 56px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    font-size: 25px;
+    text-align: center;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    
+    
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.sidenav.leftSide {
+    left: 0;
+}
+
+.sidenav.rightSide {
+    right: 0;
+}
+
+.sidenav .menu {
+    width: 100%;
+    height: 100px;    
+    padding: 10px 0;
+    box-sizing: border-box;
+    background: #2e7d32;
+}
+
+.sidenav .menu ul {
+    font-size: 0;
+    text-align: center;
+}
+.sidenav .menu ul li {
+    display: inline-block;
+    width: 33.33%;
+    font-size: 14px;
+}
+
+.sidenav .menu ul li a {
+    display: block;
+}
+
+.sidenav .menu ul li a p {
+    margin-top: 3px;
+    color: white;
+}
+
+
+
+/*** exit ***/
+.exit {
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    
+    background: black;
+    text-align: center;
+    line-height: 56px;
+}
+
+.leftExit {
+    right: 0;
+    margin-right: -56px;
+}
+
+.rightExit {
+    left: 0;
+    margin-left: -56px;
+}
+
+.exit a {
+    color: white;
+    font-size: 40px;
+}
+
+
+
+
+/*** accordion ***/
+.accordion {
+    width: 100%;
+    border: none;
+    padding: 18px;
+    position: relative;
+    background-color: #f3f3f3;
+
+    text-align: left;
+    color: black;
+    font-size: 13px;
+    font-weight: bold;
+
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.leftBar {
+    width: 5px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #4caf50;
+}
+
+.accordion:after {
+    content: '\002B';
+    float: right;
+    margin-left: 5px;
+    
+    color: #777;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.innerMenu {
+    max-height: 0;
+    background-color: white;
+    
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.innerMenu li {
+    height: 50px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    
+    background-color: #fff;
+    line-height: 50px;
+}
+
+.innerMenu li a {
+    display: block;
+    padding-left: 25px;
+    box-sizing: border-box;
+    
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* innerMenu background */
+.innerMenu.first li:nth-child(1) a {
+    background: url(../images/slice/0-1-main---menu_17.png) no-repeat;
+    background-position: center left;
+}
+.innerMenu.first li:nth-child(2) a {
+    background: url(../images/slice/0-1-main---menu_20.png) no-repeat;
+    background-position: center left;
+}
+.innerMenu.first li:nth-child(3) a {
+    background: url(../images/slice/0-1-main---menu_22.png) no-repeat;
+    background-position: center left;
+}
+
+.innerMenu.second li:nth-child(1) a {
+    background: url(../images/slice/0-1-main---menu_17.png) no-repeat;
+    background-position: center left;
+}
+.innerMenu.second li:nth-child(2) a {
+    background: url(../images/slice/0-1-main---menu_20.png) no-repeat;
+    background-position: center left;
+}
+.innerMenu.second li:nth-child(3) a {
+    background: url(../images/slice/0-1-main---menu_22.png) no-repeat;
+    background-position: center left;
+}
+
+.innerMenu.third li:nth-child(1) a {
+    background: url(../images/slice/0-1-main---menu_17.png) no-repeat;
+    background-position: center left;
+}
+.innerMenu.third li:nth-child(2) a {
+    background: url(../images/slice/0-1-main---menu_20.png) no-repeat;
+    background-position: center left;
+}
+
+.innerMenu.fourth li:nth-child(1) a {
+    background: url(../images/slice/0-1-main---menu_20.png) no-repeat;
+    background-position: center left;
+}
+.innerMenu.fourth li:nth-child(2) a {
+    background: url(../images/slice/0-1-main---menu_22.png) no-repeat;
+    background-position: center left;
+}
+
+
+
+
+
+
+
+/***** my page *****/
+header .login {
+    width: 56px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    
+    font-size: 25px;
+    text-align: center;
+}
+
+.upperWrap {
+    padding: 40px 0;
+    text-align: center;
+}
+
+
+.loginBtn {
+    display: inline-block;
+    width: 80px;
+    height: 35px;
+    background: #4caf50;
+}
+
+.joinBtn {
+    display: inline-block;
+    width: 80px;
+    height: 35px;
+    background: #373737;
+}
+
+.loginBtn a, .joinBtn a {
+    display: block;
+    line-height: 35px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.rightSide p {
+    padding-left: 20px;
+    color: #737373;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.history {
+    border-top: 2px solid #d7d7d7;
+    margin-top: 20px;
+}
+.history li {
+    height: 50px;
+    border-bottom: 1px solid #d7d7d7;
+    padding-left: 20px;
+}
+.history li a {
+    display: block;
+    height: 100%;
+    
+    color: black;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 50px;
+}
+
+
+/*** panel_cover ***/
+#panel_cover {
+    height: 100%;
+    position: absolute;
+    z-index: 50;
+    top: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+
+
+
+
+
+/***********************
+        login
+************************/
+
+.contents {
+    padding: 10px;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+
+.contents h4 {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.contents h4 span {
+    color: #4caf50;
+}
+
+
+/***** form *****/
+.contents form {
+    margin-top: 50px;
+}
+
+.contents input {
+    display: block;
+    box-sizing: border-box;
+}
+
+.contents .id, .contents .pw {
+    width: 100%;
+    height: 35px;
+    margin: 0;
+    margin-bottom: 10px;
+    text-indent: 10px;
+}
+
+.contents .chkBox {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 0;
+    margin-top: 10px;    
+    
+    background: white;
+    vertical-align: middle;
+}
+
+.contents p {
+    display: inline-block;
+    color: #afafaf;
+    font-size: 13px;
+}
+
+.contents .submitBtn {
+    width: 100%;
+    height: 35px;
+    border: 0;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    
+    background: #39b54a;
+    border: 0;
+    color: white;
+}
+
+
+
+.contents ul {
+    width: 85%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.contents ul li {
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+}
+.contents ul li:after {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 8px;
+    margin: 0 20px;
+    
+    background: #ccc;
+}
+.contents ul li:last-child:after {
+    display: none;
+}
+
+
+.contents ul li a {
+    
+}
+
+
+/***********************
+        footer
+************************/
+
+/***** top ******/
+.footerTop ul {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    
+    text-align: center;
+}
+
+.footerTop ul li {
+    width: 25%;
+    float: left;
+}
+
+.footerTop ul li a {
+    display: block;
+}
+.footerTop ul li a img {
+    width: 80%;
+}
+
+
+
+/***** bottom ******/
+.footerBottom {
+    text-align: center;
+}
+.footerBottom ul {
+    margin: 20px 0;
+    font-size: 0;
+}
+.footerBottom ul li {
+    display: inline-block;
+    font-size: 13px;
+}
+
+.footerBottom ul li:after {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 8px;
+    margin: 0 5px;
+    
+    background: #ccc;
+}
+
+.footerBottom ul li:last-child:after {
+    display: none;
+}
+
+.footerBottom ul li a {
+    color: #737373;
+}
+
+.footerBottom .function li a {
+    color: #444444;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.footerBottom p {
+    margin: 20px 0;
+    color: #737373;
+}
+
+
+
+
+

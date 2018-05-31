@@ -1,0 +1,361 @@
+@media screen and (max-width: 768px) {
+    /************************
+            default
+    *************************/
+    
+    .inner {
+        width: 100%;
+        min-width: 360px;
+        margin: 0 auto;
+        position: relative;
+    }
+    
+    /************************
+            header
+    *************************/
+    header {
+        height: 50px;
+    }
+    header h1 {
+        height: 50px;
+        margin-left: 15px;
+        line-height: 50px;
+    }
+    header h1 a img {
+        width: 50%;
+    }
+    
+    /***** nav *****/
+    .gnb {
+        display: none;
+        height: 50px;
+        line-height: 50px;
+    }
+    
+    
+    /***** panel *****/
+    header .sidenav {
+        display: block;
+        width: 100%;
+        height: 0;
+        position: absolute;
+        z-index: 1000;
+        top: 50px;
+        
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+        color: #f1f1f1;
+    }
+
+    .sidenav .closeBtn {        
+        padding: 0;
+        padding-right: 8px;
+        position: absolute;
+        top: 0;
+        right: 10px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+    header .openBtn {
+        display: block;
+        position: absolute;
+        z-index: 100;
+        top: 2px;
+        right: 15px;
+        cursor:pointer;
+        font-size:30px;
+        color:white;"
+    }
+    
+    
+    
+    
+    
+    
+    /************************
+            intro
+    *************************/
+    .layer {
+        padding: 0 30px;
+        box-sizing: border-box;
+    }
+    
+    .layer h1 {
+        font-size: 50px;
+    }
+    
+    .layer p {
+        font-size: 25px;
+    }
+    
+    
+    
+    
+    /************************
+            profile
+    *************************/
+
+    /***** title *****/
+    .title {
+        width: 85%;
+        height: 200px;
+        margin: 0 auto;
+        padding-top: 80px;
+    }
+    /***** contents *****/
+    
+    /*** about ***/
+    .about {
+        float: none;
+        width: 100%;
+        padding: 0 30px;
+    }
+    
+    .about h2 {
+        margin-bottom: 20px;
+    }
+   
+    /*** picture ***/
+    .picture {
+        float: none;
+        width: 100%;
+    }
+    
+    .picture img {
+        margin-top: 40px;
+    }
+   
+    /*** detail ***/
+    .detail {
+        float: none;
+        width: 100%;
+        margin-top: 40px;
+        padding: 0 30px;
+    }
+    
+    .detail h2 {
+        margin-bottom: 20px;
+    }
+    
+    /*** tags ***/
+    .tags {
+        margin-bottom: 50px;
+    }
+    
+    
+    
+    
+    
+    /************************
+            abilities
+    *************************/
+    
+    /*** skills ***/
+    .skills {
+        float: none;
+        width: 100%;
+        padding-left: 30px;
+    }
+
+    
+    /*** certified ***/
+    .certified {
+        float: none;
+        width: 100%;
+        padding-left: 30px;
+        margin: 80px 0;
+    }
+    
+    
+    
+    
+    
+    
+    /************************
+            timeline
+    *************************/
+    #section3 .title {
+        height: 180px;
+    }
+    #section3 .contents {
+        height: 900px;
+    }
+    
+    .progress {
+        height: 840px;
+        left: 35px;
+    }
+
+    .month {
+        vertical-align: top;
+    }
+
+    .cont {
+        display: inline-block;
+        width: 80%;
+        
+    }
+
+    /*** left ***/
+    .left {
+        padding-right: 0;
+        padding-left: 60px;
+        text-align: left;
+    }
+
+    .left h3:after {
+        left: 35px;
+    }
+
+    .left .month {
+        float: none;
+    }
+
+    .left .cont {
+        margin-right: 10px;
+        float: none;
+    }
+
+    .left ul li:after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+
+    /*** right ***/
+    .right {
+        padding-left: 60px;
+        text-align: left;
+    }
+
+    .right h3:after {
+        left: 30px;        
+    }
+    
+    .right .cont {
+        margin-left: 0;
+    }
+
+    /*** history ***/
+    .history h3 {
+        margin-top: 50px;
+    }
+    
+    
+    
+    
+    
+    /************************
+            project
+    *************************/
+    #section4 .contents {
+        padding: 30px 20px;
+        padding-bottom: 50px;
+    }
+
+    .project {
+        float: none;
+        width: 100%;
+        min-height: 400px;
+    }
+    
+    .project a {
+        display: block;
+        height: 100%;
+    }
+    
+    .pro_img img {
+        display: block;
+    }
+    
+    /***** cover *****/
+    .cover {
+        display: block;
+        width: 100%;
+        height: 25%;
+        max-height: 200px;
+        padding: 0 20px;
+        position: relative;
+
+        background: white;
+        text-align: left;
+        color: #434242;
+    }
+
+    .cover h2 {
+        display: none;
+    }
+
+    .cover .line {
+        display: none;
+    }
+    
+    .cover h4 {
+        text-align: center;
+        font-weight: bold;
+        padding-top: 20px;
+    }
+
+    .cover h5 {
+        display: none;
+    }
+    
+    .cover p {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .cover p span {
+        margin-left: 0;
+        color: #f28705;
+    }
+    
+    /************************
+            contact
+    *************************/
+    
+    .info {
+        width: 85%;
+        margin: 0 auto;
+        padding: 0;
+    }
+    
+    .info .email, .info .phone {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    
+    .info .email img, .info .phone img {
+        display: block;
+        width: 50px;
+        margin: 30px auto;
+        position: relative;
+    }
+    .info .email p, .info .phone p {
+        margin-left: 0;
+    }
+    
+    .menu {
+        display: none;
+    }
+    
+    .copyright {
+        margin-top: 45px;
+    }
+}

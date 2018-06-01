@@ -180,9 +180,9 @@ video::-webkit-media-controls {
 
 /***** title *****/
 .title {
-    height: 240px;
+    height: 30%;
     border-bottom: 1px solid #b2b2b2;
-    padding-top: 100px;
+    padding-top: 70px;
     box-sizing: border-box;
 }
 
@@ -199,6 +199,8 @@ video::-webkit-media-controls {
 
 /***** contents *****/
 #section1 .contents {
+    height: 60%;
+    position: relative;
     padding-top: 50px;
     box-sizing: border-box;
     color: #434242;
@@ -278,16 +280,17 @@ video::-webkit-media-controls {
 
 /***** tags *****/
 .tags {
-    margin-top: 50px;
+    height: 10%;
+    margin-top: 1.5em;
 }
 
 .tags ul {
-    margin: 20px;
+    
 }
 
 .tags ul li {
     display: inline-block;
-    width: 100px;
+    width: 110px;
     
     text-align: center;
     color: #f28705;
@@ -643,14 +646,3 @@ video::-webkit-media-controls {
     margin-top: 80px;
     color: #b4b3b3;
 }
-
-
-
-
-
-
-
-
-
-
-

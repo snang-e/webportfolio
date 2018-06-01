@@ -377,6 +377,7 @@ video::-webkit-media-controls {
 
 
 #section3 .contents {
+    height: 70%;
     padding-top: 10px;
     padding-bottom: 20px;
     box-sizing: border-box;
@@ -385,7 +386,7 @@ video::-webkit-media-controls {
 
 .progress {
     width: 2px;
-    height: 540px;
+    height: 95%;
     background: #434242;
     
     position: absolute;

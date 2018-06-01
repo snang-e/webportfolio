@@ -80,7 +80,8 @@
         right: 15px;
         cursor:pointer;
         font-size:30px;
-        color:white;"
+        color:white;
+        -webkit-tap-highlight-color: #fff;
     }
     
     
@@ -360,6 +361,6 @@
     
     .copyright {
         margin-top: 45px;
-        padding-bottom: 45px;
+        margin-bottom: 45px;
     }
 }

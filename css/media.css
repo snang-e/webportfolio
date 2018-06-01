@@ -73,7 +73,7 @@
     header .openBtn {
         display: block;
         position: absolute;
-        z-index: 100;
+        z-index: 10000;
         top: 2px;
         right: 15px;
         cursor:pointer;

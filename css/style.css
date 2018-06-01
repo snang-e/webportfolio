@@ -187,12 +187,13 @@ video::-webkit-media-controls {
 }
 
 .title h1 {
+    padding: 30px 0;
     color: #f28705;
     font-weight: 500;
 }
 
 .title p {
-    margin-top: 20px;
+    padding-bottom: 30px;
     color: #727878;
     font-size: 20px;
 }

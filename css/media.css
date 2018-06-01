@@ -2,7 +2,9 @@
     /************************
             default
     *************************/
-    
+    body {
+        -webkit-tap-highlight-color: #fff;
+    }
     .inner {
         width: 100%;
         min-width: 360px;
